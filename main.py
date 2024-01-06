@@ -275,7 +275,7 @@ async def set_level(ctx, member: discord.Member, level: int):
 # Flask route to render live rankings
 @app.route('/')
 def live_rankings():
-    guild_id = int(os.getenv('GUID'))
+    guild_id = int(os.getenv('guid'))
     sorted_users = sorted(xp_data.get(guild_id, {}).items(), key=lambda x: x[1], reverse=True)
     rankings = [{"user_id": uid, "xp": xp, "rank": i+1} for i, (uid, xp) in enumerate(sorted_users)]
 
