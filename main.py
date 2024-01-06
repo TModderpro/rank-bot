@@ -6,7 +6,6 @@ import aiohttp
 import random
 from typing import Optional
 from discord.ui import Button, View
-import wikipediaapi
 import math
 from math import floor
 from discord import app_commands
