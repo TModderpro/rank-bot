@@ -7,24 +7,26 @@
     <link rel="stylesheet" href="decor.css">
 </head>
 <body>
-    <h1>Live Rankings</h1>
-    <table>
-        <thead>
-            <tr>
-                <th>Rank</th>
-                <th>User ID</th>
-                <th>XP</th>
-            </tr>
-        </thead>
-        <tbody>
-            {% for entry in rankings %}
-            <tr>
-                <td>{{ entry.rank }}</td>
-                <td>{{ entry.user_id }}</td>
-                <td>{{ entry.xp }}</td>
-            </tr>
-            {% endfor %}
-        </tbody>
-    </table>
+    <div class="container">
+        <h1>Live Rankings</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>User ID</th>
+                    <th>XP</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for entry in rankings %}
+                <tr>
+                    <td>{{ entry.rank }}</td>
+                    <td>{{ entry.user_id }}</td>
+                    <td>{{ entry.xp }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
 </body>
 </html>
