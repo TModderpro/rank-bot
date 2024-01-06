@@ -1,0 +1,5 @@
+flask
+requests
+pillow
+bs4
+discord
